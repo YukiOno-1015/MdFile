@@ -7,7 +7,7 @@
 <script>hljs.initLineNumbersOnLoad();</script>
 
 :::spoiler{#heading-link .divName}
-作成日 2021/01/17
+作成日 2021/01/17  
 作成者 VLB 小野 裕己
 :::
 
