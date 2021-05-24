@@ -83,8 +83,13 @@ DDLとは、簡潔に言いますと、SQLにわたすコード「**SQL文**」�
 動作のチェックは以下の様にしてみてください。
 ファイル名やパスなどは環境によって違いますので、ご自身の環境に合わせて変えてください。
 ```
-sqlite3.exe < file.sql
+sqlite3.exe myfriend < file.sql
+sqlite3.exe myfriend
+.schema
 ```
+実際にコマンドプロンプトで行った画像が以下になります。
+
+![イメージ](https://drive.google.com/uc?export=view&id=1KNeM1NYpAmrdr1s0S_7bKcqEX7wx3adu)
 
 定義の間違いなどは在ってはいけませんが、人間です。 そこは仕方が有りません。  
 それを見つけて指摘するのが、我々添削者の仕事です。  
