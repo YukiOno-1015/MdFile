@@ -1,19 +1,8 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/vs2015.min.css">
-<link href="https://sgwp.xyz/Content/github.css" rel="stylesheet">
-<link href="https://sgwp.xyz/Content/md2.css" rel="stylesheet"></link>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.8.0/dist/highlightjs-line-numbers.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-<script>hljs.initLineNumbersOnLoad();</script>
+# 課題1のif文のreturnについて
 
-
-:::spoiler{#heading-link .divName}
 作成日 2021/01/03  
 更新日 2021/01/11  
-作成者 VLB 小野 裕己 
-:::
-
-# 課題1のif文のreturnについて
+作成者 VLB 小野 裕己
 ***
 
 ## <span>1</span>そもそもreturnとは
@@ -24,7 +13,7 @@
 
 下の表は、returnの動作についての表です。
 
-| 戻り値のデータ型 | returnで返ってくる値 
+| 戻り値のデータ型 | returnで返ってくる値
 | :---: | :---: |
 | string型 | 文字列 |
 | int型 | 整数 |
@@ -33,7 +22,8 @@
 こちらは一部ですが、他のデータ型も同様の動きとなっています。  
 これを踏まえて、mainメソッド内部のif文の説明をします。
 
-##  <span>2</span>まずは確認してみよう
+## <span>2</span>まずは確認してみよう
+
 まず、画像を見てください。
 
 ![課題1画像成果物イメージ](https://drive.google.com/uc?export=view&id=1RPO2Uyo6c5SYJ2R4yfjUbmV8KoWznJPB)
@@ -56,8 +46,8 @@ C:kadai>java Kadai3 1 2
 引数を一つ入力してください
 ```
 
-となっていて、更に下を見ると 
- 
+となっていて、更に下を見ると
+
 ```
 C:kadai>java Kadai3 あいうえを
 １以上の整数を入力してください。
@@ -70,43 +60,43 @@ C:kadai>java Kadai3 あいうえを
 
 まずは、コードを実際に用意しました。
 
-```java:javaコード
+```java:java
 public static void main(String[] args) {
 
-		// 引数が設定されなかった、または2つ以上設定された場合
-		if (args.length != 1) {
-			System.out.println("引数を一つ入力してください。");
-			return;
-		}
+  // 引数が設定されなかった、または2つ以上設定された場合
+  if (args.length != 1) {
+   System.out.println("引数を一つ入力してください。");
+   return;
+  }
 
-		// 入力値が整数値以外の場合
-		if (!isNumber(args[0])) {
-			System.out.println("1以上の整数を入力してください。");
-			return;
-		}
+  // 入力値が整数値以外の場合
+  if (!isNumber(args[0])) {
+   System.out.println("1以上の整数を入力してください。");
+   return;
+  }
 
-		// 入力値をString型からint型にキャスト
-		int count = Integer.parseInt(args[0]);
+  // 入力値をString型からint型にキャスト
+  int count = Integer.parseInt(args[0]);
      }
 ```
 
-```C#:C#コード
+```C#:C#
     public static void main(string[] args)
-	{
-		// 引数が設定されなかった、または2つ以上設定された場合
-		if (args.length != 1)
-		{
-			Console.WriteLine("引数を一つ入力してください。");
-			return;
-		}
+ {
+  // 引数が設定されなかった、または2つ以上設定された場合
+  if (args.length != 1)
+  {
+   Console.WriteLine("引数を一つ入力してください。");
+   return;
+  }
 
-		// 入力値が整数値以外の場合
-		// 入力値をString型からint型にキャストできれば整数型の変数countに渡す
-		if (!int.TryParse(args[0],out int count))
-		{
-			Console.WriteLine("1以上の整数を入力してください。");
-			return;
-		}
+  // 入力値が整数値以外の場合
+  // 入力値をString型からint型にキャストできれば整数型の変数countに渡す
+  if (!int.TryParse(args[0],out int count))
+  {
+   Console.WriteLine("1以上の整数を入力してください。");
+   return;
+  }
     }
 ```
 
