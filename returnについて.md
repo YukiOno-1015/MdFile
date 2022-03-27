@@ -60,7 +60,7 @@ C:kadai>java Kadai3 あいうえを
 
 まずは、コードを実際に用意しました。
 
-```Java
+```java:Java
 public static void main(String[] args) {
 
   // 引数が設定されなかった、または2つ以上設定された場合
@@ -80,8 +80,8 @@ public static void main(String[] args) {
      }
 ```
 
-```CSharp
-    public static void main(string[] args)
+```csharp:C#
+public static void main(string[] args)
  {
   // 引数が設定されなかった、または2つ以上設定された場合
   if (args.length != 1)
