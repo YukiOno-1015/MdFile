@@ -80,7 +80,7 @@ public static void main(String[] args) {
      }
 ```
 
-```C#:C#
+```CShap:C#
     public static void main(string[] args)
  {
   // 引数が設定されなかった、または2つ以上設定された場合
