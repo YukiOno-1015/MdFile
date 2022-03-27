@@ -17,11 +17,3 @@ test
 ```java:test.java
 test
 ```
-
-:::spoiler{#heading-link .warningDiv}
-test
-:::
-
-:::spoiler{#heading-link .warningDivBig}
-test
-:::
