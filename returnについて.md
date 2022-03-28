@@ -58,7 +58,7 @@ C:kadai>java Kadai3 あいうえを
 
 ## <span>3</span>コードを見てreturn理解しよう
 
-まずは、コードを実際に用意しました。
+まずは、コードを実際に用意しました。  
 
 ```java
 public static void main(String[] args) {
@@ -79,6 +79,7 @@ public static void main(String[] args) {
   int count = Integer.parseInt(args[0]);
      }
 ```
+
 
 ```csharp
 public static void main(string[] args)
